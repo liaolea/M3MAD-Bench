@@ -11,7 +11,7 @@ As an agent-level reasoning and coordination paradigm, MAD orchestrates multiple
 - Supporting five series of base models with diverse architectures, scales, and modality capabilities.
 - Measuring accuracy alongside cost-oriented metrics (token consumption, inference latency) to expose performance–cost trade-offs.
 
-<embed src="assert/method.pdf" type="application/pdf" width="100%" height="600px" />
+![M3MAD-Bench](assert/main.png)
 
 Extensive experiments yield systematic insights into the effectiveness, robustness, and efficiency of MAD methods across text-only and multimodal settings. We hope this repository serves as the reference implementation for future MAD benchmarking.
 
