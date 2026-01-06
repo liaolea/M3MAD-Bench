@@ -5,16 +5,10 @@
 
 M3MAD-Bench is a unified and extensible benchmark for evaluating Multi-Agent Debate (MAD) methods across **M**ulti-domain tasks, **M**ulti-modal inputs, and **M**ulti-dimensional metrics. We provide a reproducible codebase, standardized protocols, and comprehensive analyses so researchers can study MAD at scale with consistent settings.
 
-As an agent-level reasoning and coordination paradigm, MAD orchestrates multiple agents through structured debates to improve answer quality on complex problems. Prior work typically evaluates MAD under fragmented setups and text-only scenarios, limiting cross-paper comparisons and leaving multimodal reasoning largely unexplored. M3MAD-Bench addresses these gaps by:
-
 - Covering five core task domains: **Knowledge**, **Mathematics**, **Medicine**, **Natural Sciences**, and **Complex Reasoning**.
 - Including 13 datasets (7 text-only, 6 multimodal) so researchers can perform controlled vision-language vs. pure-text comparisons.
-- Supporting five series of base models with diverse architectures, scales, and modality capabilities.
+- Supporting lots of base models with diverse architectures, scales, and modality capabilities.
 - Measuring accuracy alongside cost-oriented metrics (token consumption, inference latency) to expose performance–cost trade-offs.
-
-
-
-Extensive experiments yield systematic insights into the effectiveness, robustness, and efficiency of MAD methods across text-only and multimodal settings. We hope this repository serves as the reference implementation for future MAD benchmarking.
 
 ---
 
