@@ -1,5 +1,5 @@
 # M3MAD-Bench: Are Multi-Agent Debates Really Effective Across Domains and Modalities?
-[📖 Paper](111)
+[📖 Paper](https://arxiv.org/abs/2601.02854)
 
 ![M3MAD-Bench](assert/main.png)
 
