@@ -1,0 +1,6 @@
+# USING llamafactory, need to install llamafactory first
+
+model_name_or_path: PATH_TO_YOUR_MODEL
+template: qwen
+
+# API_PORT=8000 CUDA_VISIBLE_DEVICES=0 llamafactory-cli api local_api_server/qwen2.5_14b.yaml
