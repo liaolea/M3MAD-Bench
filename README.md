@@ -130,6 +130,17 @@ Outputs include per-sample JSONL traces and a `*_stats.json` summary (token coun
 - **Multi-Dimensional Evaluation:** Accuracy, token consumption, and inference latency. Raw logs make it easy to derive further metrics (e.g., debate rounds, judge agreement).
 - **Model Diversity:** Five series of base models covering open-source and API endpoints; plug in any OpenAI-compatible backend.
 
-
-
 Happy debating! 🗣️🤝📊
+
+## Cite us
+```
+@misc{li2026m3madbenchmultiagentdebatesreally,
+      title={M3MAD-Bench: Are Multi-Agent Debates Really Effective Across Domains and Modalities?}, 
+      author={Ao Li and Jinghui Zhang and Luyu Li and Yuxiang Duan and Lang Gao and Mingcai Chen and Weijun Qin and Shaopeng Li and Fengxian Ji and Ning Liu and Lizhen Cui and Xiuying Chen and Yuntao Du},
+      year={2026},
+      eprint={2601.02854},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2601.02854}, 
+}
+```
