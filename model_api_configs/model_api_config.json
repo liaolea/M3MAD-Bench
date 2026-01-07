@@ -1,0 +1,20 @@
+{
+    "gpt-4o-mini": {
+        "model_list": [
+            {"model_name": "gpt-4o-mini", "model_url": "https://openai.com/api/v1", "api_key": "XXXXXX"}
+        ],
+        "max_workers_per_model": 10
+    },
+    "qwen-vl-7b-local": {
+        "model_list": [
+            {"model_name": "qwen2.5-vl-7b-instruct", "model_url": "http://localhost:8000/v1", "api_key": "local"}
+        ],
+        "max_workers_per_model": 1
+    },
+    "llama3.1-8b-local": {
+        "model_list": [
+            {"model_name": "llama3.1-8b-instruct", "model_url": "http://localhost:8000/v1", "api_key": "local"}
+        ],
+        "max_workers_per_model": 10
+    }
+}
