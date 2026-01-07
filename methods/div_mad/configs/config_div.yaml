@@ -1,0 +1,14 @@
+num_players: 3
+max_round: 3
+judge_model_name: qwen-vl-7b-local
+judge_temperature: 0.5
+agents:
+  - name: Affirmative side
+    model_name: qwen-vl-7b-local
+    temperature: 0.5
+  - name: Negative side
+    model_name: qwen-vl-7b-local
+    temperature: 0.5
+  - name: Moderator
+    model_name: qwen-vl-7b-local
+    temperature: 0.5

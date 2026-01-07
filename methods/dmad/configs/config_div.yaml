@@ -1,0 +1,33 @@
+text_strategies: [cot, sbp, pot]
+multimodal_strategies: [io, ccot, ddcot]
+max_round: 3
+agent_temperature: 0.5
+judge_temperature: 0.5
+judge_model_name: qwen-vl-7b-local
+return_all: true
+text_agents:
+  - strategy: cot
+    name: Text CoT Agent
+    model_name: qwen-vl-7b-local
+    temperature: 0.5
+  - strategy: sbp
+    name: Step-Back Thinker
+    model_name: qwen-vl-7b-local
+    temperature: 0.5
+  - strategy: pot
+    name: Code Solver
+    model_name: qwen-vl-7b-local
+    temperature: 0.5
+multimodal_agents:
+  - strategy: io
+    name: Direct Vision Agent
+    model_name: qwen-vl-7b-local
+    temperature: 0.5
+  - strategy: ccot
+    name: Scene Graph Analyst
+    model_name: qwen-vl-7b-local
+    temperature: 0.5
+  - strategy: ddcot
+    name: Decompose & Decide
+    model_name: qwen-vl-7b-local
+    temperature: 0.5

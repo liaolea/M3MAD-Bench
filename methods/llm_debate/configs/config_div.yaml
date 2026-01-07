@@ -1,0 +1,14 @@
+agents_num: 3
+rounds_num: 2
+judge_model_name: qwen-vl-7b-local
+judge_temperature: 0.5
+agents:
+  - name: Agent A
+    model_name: qwen-vl-7b-local
+    temperature: 0.5
+  - name: Agent B
+    model_name: qwen-vl-7b-local
+    temperature: 0.5
+  - name: Agent C
+    model_name: qwen-vl-7b-local
+    temperature: 0.5
