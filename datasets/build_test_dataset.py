@@ -246,10 +246,6 @@ elif args.dataset_name == "MME":
         data_list.append(data)
     data_list = shuffle_and_sample(data_list, args.num2sample)
 
-
-elif args.dataset_name == "ScienceQA":  
-    load_dataset_path = args.dataset_path if args.dataset_path else "derek-thomas/ScienceQA"
-
 # load MathVista
 elif args.dataset_name == "MathVista": 
     load_dataset_path = args.dataset_path if args.dataset_path else "AI4Math/MathVista"
@@ -363,32 +359,6 @@ elif args.dataset_name == "PathVQA":
             "query": example["question"],
             "gt": example["answer"],
             "tag": ["medical"],
-            "source": args.dataset_name
-        }
-        data_list.append(data)
-    data_list = shuffle_and_sample(data_list, args.num2sample)
-
-# load TextVQA 还没有修改
-elif args.dataset_name == "TextVQA":
-    load_dataset_path = args.dataset_path if args.dataset_path else "lmms-lab/textvqa"
-    dataset = load_dataset(load_dataset_path, split="test", trust_remote_code=True)
-    print(f"{'='*50}\n", dataset)
-    data_list = []
-
-    cnt = 1
-    for example in dataset:
-        local_image_path = os.makedirs(image_save_path, exist_ok=True)
-        local_image_path = os.path.join(image_save_path, f"image_{cnt}.png")
-        img = example["image"]
-        if img.mode != 'RGB':
-            img = img.convert('RGB')
-        img.save(local_image_path)
-        cnt+=1
-        data = {
-            "image_path": local_image_path,
-            "query": example["question"],
-            "gt": example["answers"][0],
-            "tag": ["OCR"],
             "source": args.dataset_name
         }
         data_list.append(data)
