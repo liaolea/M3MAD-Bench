@@ -40,7 +40,7 @@ We recommend Conda (or Mamba) for dependency management:
 
 ```bash
 conda env create -f env.yaml
-conda activate mad
+conda activate m3mad
 ```
 
 The environment includes OpenAI-compatible clients, vision-language dependencies, and experiment tooling. You may safely remove the `prefix` field from `env.yaml` if it points to a user-specific path.
